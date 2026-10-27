@@ -10,8 +10,6 @@
   documentation
 </p>
 
-<h1>helleo</h1>
-
 <h1 class="page">Count</h1>
 <div class="boxes">
   <Cell name="box 1"></Cell>

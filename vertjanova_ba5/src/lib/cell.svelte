@@ -1,10 +1,8 @@
 <script>
-  let { name, onboxclick = undefined } = $props();
+  let { color, index, switchColor, onboxclick = undefined } = $props();
 </script>
 
-<div class="cell" onclick={onboxclick(name)}>{name}</div>
-
-<h1></h1>
+<button class="cell" onclick={() => switchColor(index, color)}>{color}</button>
 
 <style>
   .cell {
@@ -12,5 +10,6 @@
     border: 1px solid gray;
     height: 100px;
     width: 100px;
+    display: block;
   }
 </style>
