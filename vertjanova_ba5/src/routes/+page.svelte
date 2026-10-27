@@ -30,7 +30,8 @@
   .boxes {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
   }
 
   .page {

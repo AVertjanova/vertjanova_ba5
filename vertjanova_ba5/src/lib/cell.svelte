@@ -2,11 +2,23 @@
   let { color, index, switchColor, onboxclick = undefined } = $props();
 </script>
 
-<button class="cell" onclick={() => switchColor(index, color)}>{color}</button>
+<button
+  class="whitecell"
+  style:background-color={color}
+  onclick={() => switchColor(index, color)}>{color}</button
+>
 
 <style>
-  .cell {
+  button {
     background-color: white;
+    border: 1px solid gray;
+    height: 100px;
+    width: 100px;
+    display: block;
+  }
+
+  .blackcell {
+    background-color: black;
     border: 1px solid gray;
     height: 100px;
     width: 100px;
